@@ -12,29 +12,30 @@ function calculate() {
     
     let a = document.getElementById("a");
     let b = document.getElementById("b");
-
-    a = a.value;
-    b = b.value;
-    // console.log("a = " + a + "b =" + b);
-
     let sum;
+    
     switch (operator.value) {
         case "+":
-            sum = a + b;
+            sum = parseInt(a.value) + parseInt(b.value);
             break;
         case "-":
-            sum = a - b;
+            sum = parseInt(a.value) - parseInt(b.value)
             break;
         case "/":
-            sum = a / b;
+            sum = parseInt(a.value) / parseInt(b.value)
             break;
         case "*":
-            sum = a * b;
+            sum = parseInt(a.value) * parseInt(b.value)
             break;
         default:
             console.log("börjar om");
             break;
     }
-    result.innerHTML = sum;
+    
+    
+    result.innerHTML = sumList; 
+    
     
 }; 
+
+
