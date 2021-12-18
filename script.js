@@ -1,5 +1,4 @@
-let a = document.getElementById("a");
-let b = document.getElementById("b");
+
 
 let btn = document.getElementById("calculate")
 
@@ -10,8 +9,12 @@ btn.addEventListener("click", calculate);
 function calculate() {
     let operator = document.getElementById("operator");
     let result = document.getElementById("result");
-    a = parseInt(a.value);
-    b = parseInt(b.value);
+    
+    let a = document.getElementById("a");
+    let b = document.getElementById("b");
+
+    a = a.value;
+    b = b.value;
     // console.log("a = " + a + "b =" + b);
 
     let sum;
@@ -32,7 +35,6 @@ function calculate() {
             console.log("börjar om");
             break;
     }
-
     result.innerHTML = sum;
-
+    
 }; 
